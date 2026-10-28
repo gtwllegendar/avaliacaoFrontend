@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>avaliacaoFrontend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <main id="conteudo" class="cartao">
+    <section class="boas-vindas" aria-labelledby="titulo-boas-vindas">
+      <h1 id="titulo-boas-vindas">Bem vindo,</h1>
+      <p>
+        Acesse sua conta para continuar. Digite seu usuário e sua senha
+        ao lado e clique em Entrar.
+      </p>
+    </section>
+
+    <section class="login" aria-labelledby="titulo-login">
+      <h2 id="titulo-login">Login</h2>
+
+      <form action="#" method="post">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <a class="esqueci" href="#">Esqueci a senha</a>
+    </section>
+  </main>
+</body>
+</html>

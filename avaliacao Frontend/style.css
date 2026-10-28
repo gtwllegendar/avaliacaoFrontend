@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #121212;
+  color: #fff;
+}
+/* pedi a ajuda da ia nessa parte para fazer o balão pelo fato que não tive tempo de estudar o CSS muito afundo, pedi pra ele me explicar rapidamente, pesquisei como fazia, e apos dar erro algumas vezes eu pedi pra a IA fazer esse balao, */
+.cartao {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #2c2c2e;
+  border: 2px solid #333;
+  border-radius: 24px;
+  overflow: hidden;
+}
+/*pedi para a IA o auxilio (não sabia como fazer pra separar visando tudo não ficar igual e tambem adicionar partes com configurações diferentes. Ou seja não lembrava quais eram os comandos amarelados com exceção do body) dessa parte em diante*/
+.boas-vindas,
+.login {
+  padding: 2.5rem 2rem;
+}
+
+.boas-vindas {
+  border-right: 2px solid #ffdb89;
+}
+
+.boas-vindas h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.boas-vindas p {
+  line-height: 1.6;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 2px solid #2c2c2e;
+  background: #fff;
+}
+
+button {
+  align-self: center;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #f2f2f2;
+  border: 2px solid #ffdb89;
+  box-shadow: 3px 3px 0 #121212;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+}
+
+.esqueci {
+  margin-top: 1rem;
+  color: #2c2c2e;
+  background: #ffdb89;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #0050d0;
+  outline-offset: 2px;
+}
+
+.pular {
+  position: absolute;
+  left: -999px;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.pular:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
